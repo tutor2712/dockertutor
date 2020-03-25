@@ -1,0 +1,10 @@
+const express = require('express')
+const RoeCtrl = require('../controller/Roc-Ctrl')
+const router = express.Router()
+router.get('/BisectionEx',RoeCtrl.getBisectionEX)
+router.get('/falseEx',RoeCtrl.getfalseEX)
+router.get('/newtonEX',RoeCtrl.getnewtonEX)
+router.get('/secantEX',RoeCtrl.getsecantEX)
+router.get('/compositeEX',RoeCtrl.getcompositeEX)
+router.get('/diffEX',RoeCtrl.getdiffEX)
+module.exports = router
